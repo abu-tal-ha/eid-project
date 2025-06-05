@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Eid Mubarak Talha</title>
+
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body
+    class="bg-gradient-to-br from-yellow-100 to-green-200 flex items-center justify-center h-screen"
+  >
+    <style>
+      .mouse-icon {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 100%;
+        margin-top: 10px;
+        animation: bounceMouse 1.2s infinite;
+        font-size: 20px;
+        color: #16a34a; /* green-600 */
+      }
+      @keyframes bounceMouse {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+    </style>
+
+   <section>
+     <div class="text-center p-10 bg-white rounded-3xl shadow-xl max-w-md">
+      <div class="text-green-800 mb-4">
+        <span id="realtime" class="text-xl font-bold text-center"></span>
+      </div>
+      <h1 class="text-4xl font-bold text-green-600 mb-4">🌙 Eid Mubarak!</h1>
+      <p id="dear-line" class="text-xl font-semibold text-gray-800 mb-4">
+        Dear <span class="text-green-700">Friend and Loved Ones.</span>
+      </p>
+      <p id="response" class="text-gray-600 mt-2">
+        May your Eid be full of joy, love, peace, and countless blessings.
+      </p>
+      <p class="text-lg text-green-500 font-medium mt-4">
+        — From Your Friend
+        <i class="fa-solid fa-face-laugh text-green-600 text-2xl"></i>
+      </p>
+
+      <div class="relative inline-block mt-6">
+        <button
+          id="btn"
+          class="bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-600 transition"
+        >
+          Accept Greetings
+        </button>
+
+        <!-- Animated Mouse Icon (outside & to the right) -->
+        <div id="mouse-icon" class="mouse-icon">
+          <i class="fa-solid fa-arrow-pointer"></i>
+        </div>
+      </div>
+    </div>
+   </section>
+
+    <footer class="absolute bottom-4 w-full text-center text-sm text-gray-500">
+  &copy; 2025 | Crafted with <i class="fa-solid fa-shield-heart"></i> by Talha
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="custom.js"></script>
+  </body>
+</html>
